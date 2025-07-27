@@ -1,0 +1,20 @@
+{
+  "networks": [
+    {
+      "average_blocktime_ms": 5000,
+      "chain_id": 4202,
+      "explorer_urls": [
+        "https://sepolia-blockscout.lisk.com",
+        "https://sepolia-blockscout.lisk.com/api"
+      ],
+      "features": ["eip1559"],
+      "is_testnet": true,
+      "network": "lisk-sepolia",
+      "required_confirmations": 1,
+      "rpc_urls": ["https://rpc.sepolia-api.lisk.com"],
+      "symbol": "LSK",
+      "tags": ["l2", "rollup"],
+      "type": "evm"
+    }
+  ]
+}

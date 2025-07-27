@@ -1,0 +1,20 @@
+[Unit]
+Description=OpenZeppelin Relayer
+After=network.target
+
+[Service]
+Type=simple
+# IMPORTANT: Replace 'your_user' and 'your_group' with the actual username and group
+# that will run the application on your server. For example: User=ubuntu
+User=your_user
+Group=your_group
+WorkingDirectory=/home/fahmi/Project/relayer-prod
+EnvironmentFile=/home/fahmi/Project/relayer-prod/.env
+ExecStart=/home/fahmi/Project/relayer-prod/openzeppelin-relayer
+Restart=on-failure
+RestartSec=5s
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
